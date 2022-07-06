@@ -1,0 +1,371 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+
+    position: relative;
+  
+}
+
+
+/* Start Header  */
+
+/* header{
+    z-index: -1;
+} */
+
+/* Start Bar  */
+.bar{
+    /* background: #35363A; */
+    height: 25px;
+    background: #e4e4e4;
+    
+    
+    
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+.minus{
+    width: 50px;
+    height: 25px;
+    /* transform: scale(0.7); */
+    /* background-color: aqua;  */
+    margin: 0;
+    position: relative;
+}
+.line{
+    position: absolute;
+    top: 12.5%;
+}
+.cross{
+    position: absolute;
+    top: 12.5%;
+
+    transform: scale(1);
+}
+
+.minu{
+    width: 10px;
+    height: 10px;
+    background: none;
+    border: 2px solid #000;
+    border-radius: 2px;
+    transform: scale(0.7);
+
+    position: absolute;
+    bottom:10px ;
+
+    /* position: relative; */
+}
+
+.minu::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    position: absolute;
+    left:  5px;
+    bottom: 5px;
+    border-top:2px solid #000 ;
+    border-right: 2px solid #000;
+    border-radius: 0 2px 0 0;
+}
+
+
+
+.minus:hover{
+    background: #d6d6d6;;
+}
+.minus:hover:nth-child(3){
+    background-color: red;
+}
+
+/* End Bar  */
+
+
+/* Start Nav Bar  */
+.nav{
+  /* background: #fff; */
+  /* background: darkblue; */
+  height: 50px;
+  z-index: 3;
+}
+
+.bar-srh{
+    width: 30%;
+    
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.nav i{
+    width: 8%;
+    transform: scaleX(1.5);
+    color: #cbc7c7;
+}
+.nav i:hover{
+     color: #dcd5d5;
+}
+
+.nav input{
+    width: 80%;
+}
+
+.nav input:focus{
+    outline: none;
+    border: 2px solid rgb(139, 188, 240);
+    border-radius: 2px ;
+}
+
+
+/* Start Dashboard  */
+
+
+
+.dashboard{
+    width: 18%;
+    height: 100%;
+    position: relative;
+    background: #fff;
+    /* background-color: #cbc7c7; */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+   
+}
+
+
+
+ .profile{
+    width: 50px;
+    border-radius:50% ;
+    margin-top: 20px;
+    
+}
+.dashtitle{
+height: 130px;
+/* background-color: aqua; */
+border-bottom: 1px solid rgb(236, 228, 228);
+margin-bottom: 0;
+
+}
+
+.dashtitle div p i{
+   position: absolute;
+   right: 20px;
+}
+
+.toggle{
+   width: 100%;
+    height: 50px;
+   /* background-color: red; */
+    border-bottom: 1px solid rgb(236, 228, 228) ;
+
+   position: relative;
+}
+
+.toggle span{
+    position: absolute;
+    left: 50px;
+    top: 20%;
+}
+
+.toggle i{
+    border-radius: 50%;
+    color: rgb(139, 188, 240);
+    position: absolute;
+     left: 15px;
+     top: 30%;
+}
+
+.list{
+    position: relative;
+}
+
+.list div{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    /* background-color: red; */
+}
+
+.list div i{
+    position: absolute;
+    left: 8px;
+    top: 30%;
+}
+
+.DIV span{
+    position: absolute;
+    left: 50px;
+    top: 20%;
+}
+
+
+.list div .div1{
+    width: 45px;
+    background-color: rgb(19, 124, 194);
+    transform: scale(0.7);
+    border-radius: 10px;
+
+    
+}
+
+.list div .div2{
+    width: 45px;
+    background-color: rgba(255, 128, 0, 0.84);
+    transform: scale(0.7);
+    border-radius: 10px;  
+}
+
+.list div .div2 i{
+    position: absolute;
+    left: 11px;
+}
+
+
+.list div .div3{
+    width: 45px;
+    background-color: rgba(205, 33, 33, 0.874);
+    transform: scale(0.7);
+    border-radius: 10px;
+}
+
+.list div .div3 i{
+    position: absolute;
+    left: 11px;
+}
+
+.list div .div4{
+    width: 45px;
+    background-color: rgba(39, 225, 67, 0.874);
+    transform: scale(0.7);
+    border-radius: 10px;
+}
+
+.list div .div4 i{
+    position: absolute;
+    left: 11px;
+}
+
+.list div .div5{
+    width: 45px;
+    background-color: rgba(23, 166, 243, 0.874);
+    transform: scale(0.7);
+    border-radius: 10px; 
+}
+
+.list div .div5 i{
+    position: absolute;
+    left: 13.5px;
+}
+
+.list div .div6{
+    width: 45px;
+    background-color: rgba(112, 38, 224, 0.874);
+    transform: scale(0.7);
+    border-radius: 10px;
+}
+
+.list div .div6 i{
+    position: absolute;
+    left: 11px;
+}
+
+.list div .div7{
+    width: 45px;
+    background-color: rgba(23, 166, 243, 0.874);
+    transform: scale(0.7);
+    border-radius: 10px;
+}
+
+.list div .div7 .i1{
+    position: absolute;
+    left: 11px;
+} 
+
+.list .i2{
+    /* background-color: aqua; */
+  
+    position: absolute;
+    /* bottom: 50px; */
+    top: 13px;
+    left: 310px;
+
+    transform: scale(1.98);
+
+}
+
+
+.list .DIV:hover{
+    background: #f6ecec;
+}
+ 
+
+
+.dash-footer{
+    position: absolute;
+    left: 30px;
+    /* top: 265px; */
+    bottom: 25px;
+
+}
+
+.dash-footer a{
+    color: #afaeae;
+    text-decoration: none;
+}
+
+.dash-footer a:nth-child(1){
+    color: #777474;
+    text-decoration: none;
+}
+
+.dash-footer a:hover:nth-child(1){
+    text-decoration: underline;
+}
+
+.dash-footer a:nth-of-type(2){
+    text-decoration: none;
+}
+
+.dash-footer:hover a:nth-of-type(2){
+    text-decoration: underline;
+}
+
+
+.dash-footer a:last-child{
+    color: #cbc7c7;
+    text-decoration: none;
+}
+
+.dash-footer a:hover:last-child{
+    text-decoration: underline;
+}
+
+
+
+
+/* End Dashboard  */
+
+/* start conservatiion acc  */
+
+
+
+/* end conservation acc  */
+
+
+/* End nav bar  */
+
+/* End Header  */
